@@ -11,12 +11,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <link rel="icon" href="media/favicon.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
 
     <div class="container-geral">
-        <button id="backToTop" title="Voltar ao topo"><i class="fa-brands fa-fly"></i></button>
+        <button id="backToTop" title="Voltar ao topo"><i class="fa-solid fa-up-long"></i></button>
     <div class="site-header-inner">
         <div class="brand header-brand">
             <h1 class="m-0">
@@ -29,6 +29,7 @@
         <div class="sidebar">
             <a class="button" href="index.html">Início</a>
             <a class="button" onclick="scrollToSection('skills')">Skills</a>
+            <a class="button" onclick="scrollToSection('projetos')" >Projetos</a>
             <a class="button" onclick="scrollToSection('sobre')" >Sobre</a>
         </div>
     </div>
@@ -42,8 +43,7 @@
                     <h1 id=""><span id="cursor"></span></h1>
                     <h3>Gabriel Campolina</h3>
                     <h6><i class="fa-solid fa-code"></i> Dev Full-Stack</h6>
-                    <p >Criando soluções digitais que elevem a experiência do usuário e impulsionem o sucesso do seu negócio.</p>
-                    <div class="section1-btn">
+                    <div class="section1-btn" style="margin-top: 20px;">
                         <a class="button" href="https://api.whatsapp.com/send/?phone=31995701689" target="_blank">Falar comigo agora</a>
                     </div>
                 </div>
@@ -126,15 +126,27 @@
                         </div>
                         <div class="hardskill">
                             <img src="media/react.png" width="40" alt="">
-                            <p>React (studyng)</p>
+                            <p>React</p>
+                        </div>
+                        <div class="hardskill">
+                            <img src="media/node.png" width="40" alt="">
+                            <p>Node</p>
                         </div>
                         <div class="hardskill">
                             <img src="media/mysql.png" width="40" alt="">
                             <p>Mysql</p>
                         </div>
                         <div class="hardskill">
+                            <img src="media/mongo.png" width="40" alt="">
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="hardskill">
                             <img src="media/git.png" width="40" alt="">
                             <p>Git</p>
+                        </div>
+                        <div class="hardskill">
+                            <img src="media/apirest.png" width="40" alt="">
+                            <p>API-REST</p>
                         </div>
                         <div class="hardskill">
                             <img src="media/photoshop.png" width="40" alt="">
@@ -161,13 +173,63 @@
     </section>
 
 
+    <section id="projetos" class="second-section">
+        
+        <div class="about-container">
+            <h1>Ideias transformadas em realidade</h1>
+    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="media/netflix.png" alt="Descrição da imagem" class="description">
+                            <h3>Netflix Replicate</h3>
+                        <p>Replicação da plataforma de streaming Netflix feita em Django. Com backend aplicado com funcionalidades como por exemplo: autenticação.</p>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                            <img src="media/fantasticanimals.png" alt="Descrição da imagem" class="description">
+                        <h3>Animais Fantásticos</h3>
+                        <p>Desenvolvido a partir do curso de HTML e CSS da plataforma Origamid.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                            <img src="media/MoradiaEstudantil.jpg" alt="Descrição da imagem" class="description">
+                        <h3>MoradiaEstudantil</h3>
+                        <p>Sistema que proporciona colaboração para Gestão Participativa da Moradia Estudantil. Possui Cadastro, Login, Funcionalidades de eventos,avisos e enquetes.Desenvolvido com o framework Django.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                            <img src="media/ScoreZone.jpg" alt="Descrição da imagem" class="description">
+                        <h3>ScoreZone</h3>
+                        <p>Aplicação web para avaliação de jogos digitais. Desenvolvido com React.js e Node.js. Possui autenticação de usuários com JWT, garantindo segurança nas rotas privadas.
+                        Criptografia de senhas com bcrypt, protegendo as credenciais dos usuários.
+                            Sistema de avaliação por estrelas, permitindo que cada usuário vote uma única vez por jogo, garantindo integridade nas avaliações.
+                        </p>
+                    </div>
+
+
+                </div>
+                <!-- Botões de Navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
     <section id="sobre" class="second-section">
                 <div class="about-container">
                     <h1>Sobre</h1>
                     
                     
                     <p>Graduando em Sistemas de Informação na Universidade Federal dos Vales do Jequitinhonha e Mucuri (Diamantina-MG), <br>
-                        Atualmente no cargo de Dev na <a style="color: aquamarine;" href="https://www.instagram.com/nextstep.ej/" target="_blank">NextStep (Empresa Júnior). </a> <br>
+                        Dev na <a style="color: aquamarine;" href="https://www.instagram.com/nextstep.ej/" target="_blank">NextStep (Empresa Júnior). </a> <br>
                         </p>
                         <div class="about-btns">
                             <a class="button" href="https://www.instagram.com/biel_campolina/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
@@ -183,7 +245,7 @@
 </div>
     
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
