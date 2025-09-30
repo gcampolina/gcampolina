@@ -152,6 +152,4 @@
 </div>
 
 
-![Snake animation](https://github.com/gcampolina/gcampolina/blob/output/github-contribution-grid-snake.svg)
-
 
