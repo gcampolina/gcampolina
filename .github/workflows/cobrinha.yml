@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # roda a cada 12 horas certinho
+    - cron: "0 */12 * * *"  # roda a cada 12h
   workflow_dispatch:          # permite rodar manualmente
 
 jobs:
@@ -14,7 +14,9 @@ jobs:
         uses: Platane/snk@master
         with:
           github_user_name: gcampolina
-          outputs: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Deploy no branch output
         uses: crazy-max/ghaction-github-pages@v4
